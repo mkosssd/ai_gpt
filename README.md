@@ -1,22 +1,62 @@
-# 🚀 GEMINI
+# AI GPT App
 
-This is a modern web application built using [Vite](https://vitejs.dev/), a fast frontend build tool. The project includes ESLint for linting and supports multiple build modes.
+A React-based AI assistant interface that demonstrates modern frontend techniques like throttling, pagination, infinite scrolling, and form validation.
 
-## 📦 Installation
+🔗 **Live Demo**: [https://candid-pastelito-c2e7e0.netlify.app](https://candid-pastelito-c2e7e0.netlify.app)  
+💻 **GitHub Repo**: [https://github.com/mkosssd/ai_gpt](https://github.com/mkosssd/ai_gpt)
 
-Before getting started, make sure you have the following installed:
+---
 
-- [Node.js](https://nodejs.org/) (v14.18+, v16+ recommended)
-- npm or yarn
+## 🚀 Project Overview
 
-Then, clone the repository and install dependencies:
+This project is a simple AI chat interface where users can type prompts and receive AI-generated responses. It’s built to showcase frontend best practices, with special attention to performance and user experience using techniques like:
+
+- Input throttling to avoid excessive processing
+- Pagination and infinite scroll to manage data flow
+- Form validation for clean input handling
+
+AI tools were used to assist in the development process for better code structure and quicker delivery.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **Vite**
+- **JavaScript / TypeScript**
+- **Netlify** (for deployment)
+
+---
+
+## 🧑‍💻 Setup & Run Instructions
+
+Follow the steps below to run the project locally:
+
+### 1. Clone the repository
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/mkosssd/ai_gpt.git
+cd ai_gpt
+```
 
-# Install dependencies
+### 2. Install dependencies
+```bash
 npm install
-# or
-yarn install
+```
+
+### 3. Start development server
+```bash
+npm run dev
+```
+
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+### 5. Preview the production build
+```bash
+npm run preview
+```
