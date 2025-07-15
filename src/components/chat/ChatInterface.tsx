@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, MoreVertical, Trash2 } from 'lucide-react';
+import { ArrowLeft, MoreVertical, Trash2, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
@@ -210,13 +210,14 @@ export function ChatInterface() {
         {chatroom.messages.length === 0 && (
           <div className="text-center py-12">
             <div className="bg-gradient-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MessageBubble message={{
-                id: 'welcome',
-                content: 'Start your conversation with Gemini!',
-                sender: 'ai',
-                timestamp: new Date(),
-              }} />
+              <Bot className="h-8 w-8 text-primary" />
             </div>
+            <h3 className="text-lg font-medium text-muted-foreground mb-2">
+              Start your conversation with Gemini!
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Type a message below to begin chatting with AI.
+            </p>
           </div>
         )}
         
